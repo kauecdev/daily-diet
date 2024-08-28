@@ -6,16 +6,20 @@
   "scripts": {
     "dev": "tsx --watch src/server.ts",
     "lint": "eslint src -e .ts --fix",
-    "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "test": "vitest --no-file-parallelism"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.5.0",
+    "@types/supertest": "^6.0.2",
     "globals": "^15.9.0",
+    "supertest": "^7.0.0",
     "tsx": "^4.17.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   },
   "dependencies": {
     "@fastify/cookie": "^9.4.0",
